@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+	<title>Santa Claus Kit!</title>
+	<link rel='icon' type='image.png' 
+	sizes='16x16' href="image/icon01.png">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+	<link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Noto+Sans+KR:wght@400;700&family=Pinyon+Script&display=swap" rel="stylesheet">
+
+	<style type='text/css'>
+
+		html{scroll-behavior: smooth; font-size: 8px; position: relative;}
+
+		body,ul,li,a{margin: 0; padding: 0;}
+		body{background: #411919; position: relative;}
+
+		.wrapper{width: 1200px; margin: auto; padding: 0px;}
+
+		.flex{display: flex; justify-content: space-around;}
+
+		.p-flex{display: flex; justify-content:flex-start;}
+
+		.f-flex{display: flex; justify-content: space-between; flex-wrap: wrap;} 
+
+		li{list-style-type: none;}
+
+		.menu{width: 30vw;}
+
+		.left{width: 50vw; position: relative; top: 18vw; float: right;}
+		.title02{float: left; text-align:center;}
+
+		.full{background-size: cover; margin: 0; background-attachment: fixed; background-image: url(image/totalbackground.jpg); background-position: 0px -460px; height: 80vh; display: flex; justify-content: center; align-items: center;}
+
+		.intro{background: #123524; height: 50vw;}
+
+		.flex2{display: flex;gap: 100px; flex-wrap: wrap;}
+		.col-2{width: 24vw; position: relative; top: -1.4vw;}
+		.col-3{width: 36vw;}
+
+		header{background-image: url('image/background.jpg');
+			background-size:100%; background-position: 0px -150px; height: 50vw;}
+
+		a{display: block; padding: 10px 20px;
+			 text-decoration: none;
+			 font-family: 'Noto Sans KR', sans-serif;
+			 border-radius: 10px; color: #F9EBBC}
+
+		.menu a{font-size: 1vw; font-weight: 400;}
+
+		a:hover{font-weight: 700;}
+
+		h1{font-family: 'Pinyon Script', cursive;
+			font-size: 6vw; font-weight: 400; color:#F9EBBC;
+			word-spacing: -1rem;}
+
+		h2{font-family: 'EB Garamond', serif; font-weight: 400;
+			font-size: 2vw; color: #F9EBBC}
+
+		h3{font-family: 'Noto Sans KR', sans-serif;
+			font-weight: 700; color: whitesmoke; }
+
+		h4{font-family: 'EB Garamond', serif; font-weight: 400; font-size: 1vw; color: whitesmoke; line-height: 1.4vw;}
+
+		p{font-family: 'Noto Sans KR', sans-serif;
+			font-weight: 400; color: whitesmoke; font-size:1.4vw; letter-spacing: -0.1vw; line-height:2.5vw; word-break: keep-all;}
+
+		.subtitle{margin-top: 0%}
+		.subdescript{margin-top: 6%;}
+
+		.introduce{font-size:4vw; margin:0 0 2vw 0;
+			line-height: 5vw;}
+		.contents{font-size: 3.2vw; line-height: 4vw; margin: 0; padding-top: 0;}
+
+		.contentstitle{font-size: 3vw; margin: 4vw 0 0 0; text-align: center; color:#F9EBBC;}
+
+		.carousel_p{margin: 0 0 3vw 0; padding-top: 4vw; font-size: 1.2vw;}
+
+		.button1 {border: none; color: #F9EBBC; padding: 10px 50px; text-align: center; text-decoration: none; display: inline-block; font-size: 1.2vw; transition-duration: 0.4s; cursor: pointer; border: 1px solid #F9EBBC; font-family: 'Noto Sans KR', sans-serif; font-weight: 700; background-color: rgba(0,0,0,0.2);}
+
+		.button1:hover{background-color: rgba(249, 235, 188, 0.6); color: #411919;}
+
+		.button2 {border:none; color:#F9EBBC; padding: 8px 60px; text-align: center; text-decoration: none; display: inline-block; font-size: 1.2vw; transition-duration: 0.4s; cursor: pointer; font-family: 'Noto Sans KR', sans-serif; font-weight: 700; background-color:#7A201F; }
+
+		.button2:hover{box-shadow: 0 6px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);}
+
+		.thank{background-image: url(image/background2.jpg); background-size: 100%; height: 80vw; display: flex; justify-content: center; position: relative;}
+
+		footer{height: 8vw;}
+
+		.swiper {
+      width: 100%;
+      height: 45vw;
+      background-image: url(image/carouselbg.jpg);
+    }
+
+    .swiper-slide {
+      font-size: 18px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .slides02 { scroll-snap-type: x mandatory; scroll-behavior: smooth;}
+
+    :root {
+    --swiper-theme-color: #F9EBBC;
+}
+
+	</style>
+</head>
+<body>
+	<header>
+		<div>
+			<nav>
+			<div class='wrapper flex'>
+				<div class='logo'>
+					<a href='index.html' style="font-family: 'Pinyon Script'; font-size: 1.4vw;">Santa Assosiation</a>
+				</div>
+				<ul class='menu flex'>
+					<li><a href='#info'>제품소개</a></li>
+					<li><a href='#progress'>구성품</a></li>
+					<li><a href='#purchase'>구매하기</a></li>
+				</ul>
+			</div>
+			</nav>
+				<div class="left">
+					<div class="title02">
+						<h1 style="margin: 0px;
+						">Santa Claus Kit</h1>
+						<h2 class="subtitle">
+						for Merry Christmas</h2>
+						<p class="subdescript">성탄절 밤, 산타들이 꼭 갖고 다녀야 할 산타클로스 키트</p>
+					</div>
+				</div>
+		</div>	
+	</header>
+	<div class="full">
+		<div style="margin: auto;">
+			<h3 style="font-size:11vh; text-align: center;
+			margin: 0;">
+			&#145;산타클로스&#146;
+			</h3>
+			<h3 style="font-size:6vh; text-align: center;
+			margin: 0;">
+			되고 싶었던 적 없나요?</h3>
+			<p style="text-align: center; margin-top:3vw;">
+			현재 이 사이트를 보고 계시다면, 네 맞습니다. 지금 산타클로스로 스카웃되신 겁니다!<br>
+			관심과 의향이 있으시다면 지금 소개드릴 산타클로스 키트를 구매해주시면 됩니다.</p>
+		</div>
+	</div>
+	<section class="intro">
+		<a id='info' style="padding: 0;">
+			<div style="position: relative; top: 14vw; left:8vw;
+				width: 40vw; word-break: keep-all;">
+				<h3 class="introduce">
+					산타에 대한 환상을 아직 품고 있다면.
+				</h3>
+				<p style="margin-bottom: 20px;">
+					어린 시절에 산타를 기다리던 설레는 마음을 되찾고 싶지 않으신가요? 이제는 훌쩍 커버려서 더 이상 산타와 인연이 없을 것만 같아 아쉽진 않으신가요?
+				</p>
+				<p>
+					저희 핀란드 산타협회에서는 마음 속에 이런 동심을 숨겨두신 순수한 분들에게 산타클로스 키트를 소개드려 산타가 되어 성탄절을 빛내주실 기회를 드립니다.
+				</p>
+				<img src="image/tree01.png" height="800" style="position:absolute; top:-5vw; left: 45vw;">
+			</div>
+		</a>
+	</section>
+	<section class="intro">
+			<div style="position: relative; top: 15vw; left:50%;
+				width: 40vw; word-break: keep-all;">
+				<h3 class="introduce">
+					산타 사용자 경험에 특화된 알찬 구성.
+				</h3>
+				<p>
+					어릴 적 상상으로만 그리던, 루돌프가 끄는 썰매와 포슬포슬한 산타 옷. 이제 여러분이 직접 쓸 수 있는 겁니다! 동심과 실용성을 모두 충족하는 알찬 구성의 산타클로스 키트를 만나보세요.
+				</p>
+				<img src="image/gift01.png" height="800" style="position:absolute; top: -10vw; left: -50vw;">
+			</div>
+	</a></section>
+<a id='progress' style="padding: 0;">
+<div class="swiper mySwiper">
+	<h3 class="contentstitle">
+		선물 배달 단계별로 알아보는 구성품.</h3>
+    <div class="swiper-wrapper" style="top: -120px;">
+      <div class="swiper-slide flex2 slides02">
+      	<div class="col-2">
+    		<h3 class="contents">착한 아이들에게<br>
+    		갖다줄 선물 준비</h3>
+	   		<h1 style="position:absolute; top:-10vw; z-index: -1;">
+	   		01</h1>
+	    	</div>
+	    	<div class="col-3">
+	   			<p class="carousel_p">크리스마스를 즐길 자격이 있는 아이들에게 나눠줄 선물을 예쁘게 포장해야 합니다. 출발하기 전에 근사한 산타 옷으로 치장하는 것도 잊지 마세요! 여기선 스페셜 산타 셋업과 마법의 선물 보따리가 큰 도움이 될 겁니다.</p>
+	   			<button class="button1">
+	   			<a href="package01/index.html">
+	   			더 알아보기
+	   			</a></button>
+   			</div>
+   		</div>
+      <div class="swiper-slide flex2 slides02">
+	      <div class="col-2">
+	   			<h3 class="contents">누구보다 빠르게<br>
+	   			집으로 선물 배송</h3>
+	   		<h1 style="position:absolute; top:-10vw; z-index: -1;">
+	   		02</h1>
+	   		</div>
+	   		<div class="col-3">
+	   			<p class="carousel_p">하룻밤 안에 그 많은 아이들에게 선물을 전달하려면 상상도 못 할 스피드가 필요합니다! 최첨단 모터와 내비게이션이 달린 마하 산타 썰매와 치타도 뺨치는 속도를 자랑하는 최상등급 루돌프가 함께합니다.</p>
+	   			<button class="button1">
+	   			<a href="package02/index.html">
+	   			더 알아보기
+	   			</a></button>
+	   		</div>
+   		</div>
+      <div class="swiper-slide flex2 slides02">
+	      <div class="col-2">
+	    		<h3 class="contents">들키지 않게 조심<br>
+	    		은밀한 선물 배달</h3>
+	   		<h1 style="position:absolute; top:-10vw; z-index: -1;">
+	   		03</h1>
+	    	</div>
+	    	<div class="col-3">
+	   			<p class="carousel_p">선물을 갖다 놓는 와중에 아이들이 잠에서 깨는 것만큼 끔찍한 일은 없겠죠? 행복한 꿈과 함께 깊은 잠에 들도록 자장가를 틀어줄 거예요. 그리고 산타의 선물은 양말에 넣어두는 게 기본! 스노우볼 오르골과 선물용 산타양말을 알뜰하게 사용해주세요.</p>
+	   			<button class="button1">
+	   			<a href="package03/index.html">
+	   			더 알아보기
+	   			</a></button>
+	   		</div>
+	   	</div>
+      <div class="swiper-slide flex2 slides02">
+      <div class="col-2">
+	    		<h3 class="contents">산타의 이름으로<br>
+	    		축복 내려주기</h3>
+	   		<h1 style="position:absolute; top:-10vw; z-index: -1;">
+	   		04</h1>
+	    	</div>
+	    	<div class="col-3">
+	   			<p class="carousel_p">선물을 놔뒀다고 해서 끝나는 게 아닙니다! 예쁜 아이들이 착한 마음씨를 유지할 수 있도록 축복을 내려주는 것도 산타의 중요한 역할이에요. 이럴 땐 크리스마스 리스 세트와 트리 오너먼트 패키지로 아이들의 방을 성스럽게 꾸며주세요.</p>
+	   			<button class="button1">
+	   			<a href="package04/index.html">
+	   			더 알아보기
+	   			</a></button>
+	   		</div>
+	   	</div>
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+  </a>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      cssMode: true,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      pagination: {
+        el: ".swiper-pagination",
+      },
+      mousewheel: true,
+      keyboard: true,
+    });
+  </script>
+
+<section class="thank">
+	<a id="purchase" style="padding:0;">
+	<div style="position:relative; padding-top:10vw;">
+		<h1 style="color: #411919; font-size:6vh; text-align:center; margin: 0;">Merry Christmas</h1>
+		<h3 style="color: #123524; font-size:5vw; text-align:center; margin: 0;">고마워요 산타!</h3>
+		<p style="text-align:center; margin-top:2vw; color: #123524; ">산타클로스 덕에 많은 아이들이 행복한 성탄절을 보냈어요.<br>아이들이 산타에게 남긴 편지와 쿠키 세트도 막 도착했네요!<br>올해 이 영광과 축복의 주인공은 바로 당신이 될 거예요.</p>
+		<div style="text-align:center;">
+			<button class="button2" style="margin-top: 36vw; align-items: center;"><a href="trapcard/index.html">
+			구매하러 가기
+			</a></button>
+		</div>
+	</div>
+</a></section>
+<footer>
+	<div class="f-flex" style="width: 80vw; margin:auto; position: relative; top: 1vw;">
+		<div>
+			<h1 style="font-size:2vw;">Santa Assosiation</h1>
+		</div>
+		<div>
+			<h4>
+				Santa's Post Office FIN-96930, Arctic Circle Finland<br>
+				©2023 Sebin Lim. All Rights Reserved.
+			</h4>
+		</div>
+	</div>
+</footer>
+</body>
+</html>

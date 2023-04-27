@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>선물 전달</title>
+	<link rel='icon' type='image.png' 
+	sizes='16x16' href="../image/icon01.png">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
+
+	<style type='text/css'>
+
+		html{font-size: 8px;}
+
+		body{margin: 0; padding: 0; background-image: url(../image/content03.jpg); background-attachment: fixed; background-size: cover; background-position: 0px -260px;}
+
+		.wrapper{width:600px; justify-content: center; align-items: center;margin: auto; padding: 100px 0px 100px 0px; text-align: center; position: relative;}
+
+		.wrapper > img{width: 100%}
+
+		.item{text-align: center;}
+
+		.item img{animation: float 1s linear infinite alternate; position: relative;}
+
+		@keyframes float{
+			from{top: 0px;}
+			to{top: 20px;}
+		}
+
+		h1{font-family: 'Noto Sans KR', sans-serif; font-weight: 700; font-size: 8rem; color: whitesmoke; margin: 20px 0 20px 0; text-shadow: 0px 2px 8px #000000;}
+		h2{font-family: 'Noto Sans KR', sans-serif;
+			font-weight: 700; font-size: 3vw; margin: 4vw 0 0 0; text-align: center; color:#F9EBBC;}
+		p{font-family: 'Noto Sans KR', sans-serif; font-weight: 400; font-size: 2.2rem; color: whitesmoke; letter-spacing: -0.2rem}
+
+		a{display: block;
+			 text-decoration: none;
+			 font-family: 'Noto Sans KR', sans-serif;
+			 border-radius: 10px; color: #F9EBBC;}
+
+		#description {background-color: hsla(0, 0%, 0%, 0.6);
+			padding: 20px 40px;}
+
+		.buttonpage{background-image: linear-gradient(hsla(0, 0%, 0%, 0), hsla(0, 0%, 0%, 0.8));}
+
+		.flex{display: flex; text-align: center;
+			justify-content: center;}
+
+		.button{background-color: rgba(90,0,5,1); border-radius: 40px; padding-top: 16px; padding-bottom: 16px; text-align: center; display: inline-block; font-size: 16px; cursor: pointer; margin: 20px; width: 220px; border: none; transition-duration: 0.4s;}
+
+		.button:hover{box-shadow: 0px 2px 16px
+			rgba(249,135,188,0.6); font-weight: 700;}
+
+		button:focus{outline: none; text-decoration: none;}
+
+	</style>
+
+</head>
+<body>
+	<section>
+		<div class="wrapper">
+			<h2>선물 전달에 필요한..</h2>
+		</div>
+		<div class="wrapper item">
+			<img src="../image/snowball01.png">
+			<h1>
+				스노우볼 오르골
+			</h1>
+			<p id="description">
+				잠이 솔솔 오고 마음이 편안해지는 자장가가 나오는 스노우볼 오르골.<br>
+				아이들의 머리맡에 잠시 놔두세요. 산타 본인까지 잠들어버리지 않게 조심!
+			</p>
+		</div>
+		<div class="wrapper item">
+			<img src="../image/socks01.png">
+			<h1>
+				선물용 산타양말
+			</h1>
+			<p id="description">
+				신기엔 너무 큰 양말이 있어서 당황하셨죠? 당연하죠. 신는 게 아니니까요!<br>
+				안에 선물을 넣고, 양말 끝에 달린 고리를 크리스마스 트리를 달아주세요.
+			</p>
+		</div>
+	</section>
+	<section class="buttonpage">
+		<div class="wrapper">
+			<h1>
+				선물 전달이<br>
+				완료되었나요?
+			</h1>
+			<div class="flex">
+				<button class="button">
+					<a href="../package02/index.html">
+					이전 구성 소개
+				</a></button>
+				<button class="button">
+					<a href="../package04/index.html">
+					다음 구성 소개
+				</a></button>
+			</div>
+		</div>
+	</section>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>선물 배송</title>
+	<link rel='icon' type='image.png' 
+	sizes='16x16' href="../image/icon01.png">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
+
+	<style type='text/css'>
+
+		html{font-size: 8px;}
+
+		body{margin: 0; padding: 0; background-image: url(../image/content02.jpg); background-attachment: fixed; background-size: cover; background-position: 0px -260px;}
+
+		.wrapper{width:600px; justify-content: center; align-items: center;margin: auto; padding: 100px 0px 100px 0px; text-align: center; position: relative;}
+
+		.wrapper > img{width: 100%}
+
+		.item{text-align: center;}
+
+		.item img{animation: float 1s linear infinite alternate; position: relative;}
+
+		@keyframes float{
+			from{top: 0px;}
+			to{top: 20px;}
+		}
+
+		h1{font-family: 'Noto Sans KR', sans-serif; font-weight: 700; font-size: 8rem; color: whitesmoke; margin: 20px 0 20px 0; text-shadow: 0px 2px 8px #000000;}
+		h2{font-family: 'Noto Sans KR', sans-serif;
+			font-weight: 700; font-size: 3vw; margin: 4vw 0 0 0; text-align: center; color:#F9EBBC;}
+		p{font-family: 'Noto Sans KR', sans-serif; font-weight: 400; font-size: 2.2rem; color: whitesmoke; letter-spacing: -0.2rem}
+
+		a{display: block;
+			 text-decoration: none;
+			 font-family: 'Noto Sans KR', sans-serif;
+			 border-radius: 10px; color: #F9EBBC;}
+
+		#description {background-color: hsla(0, 0%, 0%, 0.6);
+			padding: 20px 40px;}
+
+		.buttonpage{background-image: linear-gradient(hsla(0, 0%, 0%, 0), hsla(0, 0%, 0%, 0.8));}
+
+		.flex{display: flex; text-align: center;
+			justify-content: center;}
+
+		.button{background-color: rgba(90,0,5,1); border-radius: 40px; padding-top: 16px; padding-bottom: 16px; text-align: center; display: inline-block; font-size: 16px; cursor: pointer; margin: 20px; width: 220px; border: none; transition-duration: 0.4s;}
+
+		.button:hover{box-shadow: 0px 2px 16px
+			rgba(249,135,188,0.6); font-weight: 700;}
+
+		button:focus{outline: none; text-decoration: none;}
+
+	</style>
+
+</head>
+<body>
+	<section>
+		<div class="wrapper">
+			<h2>선물 배송에 필요한..</h2>
+		</div>
+		<div class="wrapper item">
+			<img src="../image/sleigh02.png">
+			<h1>
+				마하 산타 썰매
+			</h1>
+			<p id="description">
+				포*쉐, 람&&기니 등 내노라 하는 교통수단 브랜드의 기술자들에게 의뢰해서 만든<br>
+				최고급 산타 썰매입니다! 편안한 탑승감과 번개같은 속도를 자랑하지요.
+			</p>
+		</div>
+		<div class="wrapper item">
+			<img src="../image/rudolph01.png">
+			<h1>
+				1등급 루돌프
+			</h1>
+			<p id="description">
+				툰드라 방목장에서 고급 버드나무잎을 먹여 키운 튼튼한 루돌프들이죠.<br>
+				사람을 잘 따르는 똑똑한 아이들로, 빛나는 코로 앞길을 환히 밝혀준답니다.
+			</p>
+		</div>
+	</section>
+	<section class="buttonpage">
+		<div class="wrapper">
+			<h1>
+				선물 배송이<br>
+				완료되었나요?
+			</h1>
+			<div class="flex">
+				<button class="button">
+					<a href="../package01/index.html">
+					이전 구성 소개
+				</a></button>
+				<button class="button">
+					<a href="../package03/index.html">
+					다음 구성 소개
+				</a></button>
+			</div>
+		</div>
+	</section>
+</body>
+</html>
